@@ -1,0 +1,3 @@
+[build]
+  base = "projeto-sds3/frontend"
+  publish = "projeto-sds3/frontend/build"
