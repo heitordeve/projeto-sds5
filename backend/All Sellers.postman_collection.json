@@ -1,0 +1,26 @@
+{
+	"info": {
+		"_postman_id": "77957207-ac67-4d5b-b985-71d4e4ec6ef3",
+		"name": "All Sellers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/sellers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_base}}/sellers",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"sellers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
