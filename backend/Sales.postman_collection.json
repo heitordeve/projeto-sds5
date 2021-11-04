@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "14176e3f-9a73-4c79-b58c-f916863decb4",
+		"name": "Sales",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sales Pagination",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_base}}/sales?page=0&size=10&sort=date,desc",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"sales"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "sort",
+							"value": "date,desc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
