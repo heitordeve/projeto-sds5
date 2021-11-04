@@ -35,6 +35,33 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Amount by Seller",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Success by Seller",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_base}}/sales/success-by-seller",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"sales",
+						"success-by-seller"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
