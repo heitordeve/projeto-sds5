@@ -2,7 +2,7 @@ import axios from "axios";
 import Pagination from "components/Pagination";
 import { useState, useEffect } from "react";
 import { SalePage } from "types/sale";
-import { formatLocalDate } from "utils/format";
+import { formatLocalDate, numberFormat } from "utils/format";
 import { BASE_URL } from "utils/requests";
 
 const DataTable = () => {
@@ -33,7 +33,7 @@ const DataTable = () => {
         <>
             <Pagination page={page} onPageChange={changePage}/>
             <div className="table-responsive">
-                <table className="table table-striped table-sm">
+                <table className="table table-striped table-sm text-center">
                     <thead>
                         <tr>
                             <th>Data</th>
@@ -50,7 +50,7 @@ const DataTable = () => {
                                 <td>{item.seller.name}</td>
                                 <td>{item.visited}</td>
                                 <td>{item.deals}</td>
-                                <td>{item.amount.toFixed(2)}</td>
+                                <td>{numberFormat(item.amount)}</td>
                             </tr>
                         ))}
 
